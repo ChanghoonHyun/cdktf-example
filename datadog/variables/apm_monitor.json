@@ -1,0 +1,31 @@
+[
+    {
+        "enable_logs_sample": null,
+        "escalation_message": "",
+        "evaluation_delay": 60,
+        "force_delete": null,
+        "include_tags": false,
+        "locked": true,
+        "message": "@slack_channel",
+        "name": "latency_l3",
+        "new_host_delay": 300,
+        "no_data_timeframe": null,
+        "notify_audit": false,
+        "notify_no_data": false,
+        "query": "avg(last_5m):default_zero(max:trace.express.request.duration.by.resource_service.90p{env:production,service:a} by {service,resource_name}) >= 3",
+        "renotify_interval": 0,
+        "require_full_window": false,
+        "silenced": {},
+        "tags": [
+            "apm",
+            "service"
+        ],
+        "threshold_windows": {},
+        "thresholds": {
+            "critical": "3",
+            "critical_recovery": "1"
+        },
+        "timeout_h": 0,
+        "type": "query alert"
+    }
+]

@@ -1,0 +1,6 @@
+{
+  "language": "python",
+  "app": "pipenv run python main.py",
+  "terraformProviders": ["datadog@~> 2.12.1"],
+  "codeMakerOutput": "imports"
+}

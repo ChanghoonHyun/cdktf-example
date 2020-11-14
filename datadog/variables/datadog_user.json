@@ -1,0 +1,11 @@
+[
+    {
+        "access_role": "adm",
+        "disabled": false,
+        "email": "chhyun@email.com",
+        "handle": "admin.devadmin.dev@email.com",
+        "is_admin": true,
+        "name": "chhyun",
+        "role": null
+    }
+]

@@ -1,0 +1,33 @@
+[
+    {
+        "enable_logs_sample": null,
+        "escalation_message": "",
+        "evaluation_delay": 900,
+        "force_delete": null,
+        "include_tags": false,
+        "locked": true,
+        "message": "*account*: `{{account.name}}`\n*function*: `{{functionname.name}}`\n*error counts*: `{{value}}`\n\n@slack_channel",
+        "name": "lambda_error_rate_l3",
+        "new_host_delay": 300,
+        "no_data_timeframe": null,
+        "notify_audit": false,
+        "notify_no_data": false,
+        "query": "min(last_30m):default_zero(max:aws.lambda.errors{account:production} by {functionname}.as_count()) /    default_zero(max:aws.lambda.invocations{account:production} by {functionname}.as_count()) * 100 >= 20",
+        "renotify_interval": 30,
+        "require_full_window": false,
+        "silenced": {},
+        "tags": [
+            "aws",
+            "error",
+            "lambda",
+            "level3"
+        ],
+        "threshold_windows": {},
+        "thresholds": {
+            "critical": "20",
+            "critical_recovery": "2"
+        },
+        "timeout_h": 0,
+        "type": "query alert"
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "description": "latency 90p, error rate",
+        "groups": [],
+        "monitor_ids": [
+            19443946,
+            19443964
+        ],
+        "monitor_search": null,
+        "name": "api",
+        "query": [],
+        "tags": [],
+        "thresholds": [
+            {
+                "target": 93,
+                "target_display": "93.",
+                "timeframe": "7d",
+                "warning": 95,
+                "warning_display": "95."
+            }
+        ],
+        "type": "monitor"
+    }
+]
