@@ -13,9 +13,9 @@ class AwsStack(TerraformStack):
 
         Vpc(self, 'CustomVpc',
             name='custom-vpc',
-            cidr='10.50.0.0/16',
-            azs=["us-east-1a", "us-east-1b"],
-            public_subnets=["10.50.1.0/24", "10.50.2.0/24"]
+            cidr='10.10.0.0/16',
+            azs=["ap-northeast-1a", "ap-northeast-1c"],
+            public_subnets=["10.10.1.0/24", "10.10.2.0/24"]
         )
 
 
