@@ -1,4 +1,4 @@
-# cdktf
+# cdktf samples
 
 ## https://github.com/hashicorp/terraform-cdk
 
